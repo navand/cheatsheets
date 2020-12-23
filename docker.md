@@ -141,6 +141,14 @@ docker rmi b750fe78269d
 
 Deletes `image`s.
 
+### `docker save`
+
+```yml
+docker save <my_image> | ssh -C user@my.remote.host.com docker load
+```
+
+Save docker_image and upload it to host.
+
 ## Clean up
 
 ### Clean all
